@@ -1,9 +1,9 @@
 -- Drop if exists and create the database
-DROP DATABASE IF EXISTS airbnb_mart;
+DROP DATABASE IF EXISTS airbnb_mart;        -- wipe any previous run
 CREATE DATABASE airbnb_mart
-  CHARACTER SET utf8mb4
-  COLLATE utf8mb4_0900_ai_ci;
-USE airbnb_mart;
+  CHARACTER SET utf8mb4     -- 4‑byte UTF‑8 → full Unicode/emoji support
+  COLLATE utf8mb4_0900_ai_ci;       -- accent‑insensitive, case‑insensitive collation
+USE airbnb_mart;         -- make it the default schema
 
 
 -- Stores currencies like USD, EUR
